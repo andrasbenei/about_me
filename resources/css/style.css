@@ -1,0 +1,288 @@
+@font-face {
+    font-family: "Noto Sans Limbu";
+    src: url("../resources/fonts/NotoSansLimbu-Regular.ttf");
+  }
+
+/* Universal Styles */
+
+html {
+  font-family: 'Noto Sans Limbu', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 1.875rem;
+}
+
+header .name {
+  flex: 1;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav a {
+  padding: 0.5rem 1rem;
+  vertical-align: bottom;
+}
+
+nav a:hover {
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  background-color: #4a4a4a;
+  color: white;
+  transition: all 0.1s linear;
+}
+
+@media only screen and (max-width: 600px) {
+  header .nav-right {
+    display: none;
+  }
+
+  header .name {
+    text-align: center;
+  }
+}
+
+/* About me */
+
+#about-me {
+  font-size: 1.1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me p {
+  max-width: 600px;
+}
+
+.button-about a{
+  padding: 0.5rem 1rem;
+  border: 2px solid #4a4a4a;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.button-about a:hover {
+  color: white;
+  background-color: #4a4a4a;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+/* About me full*/
+
+#about-me-full {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  margin: 5rem 15%;
+}
+
+.about-me-full-ctn {
+  margin: 5px;
+  height: 300px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  color: #4a4a4a;
+  font-size: 1.2rem;
+  flex-direction: column;
+}
+
+#about-me-img {
+  width: 350px;
+  height: 300px;
+}
+
+img {
+  height: 300px;
+  border-radius: 30px;
+}
+
+#about-me-desc {
+  width: 600px;
+}
+
+#about-me-desc p {
+  padding: 0 2rem;
+  line-height: 2rem;
+}
+
+#about-me-desc h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#about-me-more p{
+  margin: 3rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+/* Portfolio */
+
+#portfolio {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.portfolio-ctn {
+  margin: 5px;
+  display: flex;
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #4a4a4a;
+  font-size: 1.2rem;
+  flex-direction: column;
+}
+
+.portfolio-ctn:hover {
+  cursor: pointer;
+  border: 2px solid #4a4a4a;
+  transition: all 0.1s linear;
+}
+
+.portfolio-ctn p {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.portfolio-ctn h2 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+#sudoku {
+  background-color: #0CF8BF;
+}
+
+#path-finder {
+  background-color: #0BD1D9;
+}
+
+#price-tracker {
+  background-color: #00A8F0;
+}
+
+/* Contact */
+
+#contact {
+  width: 600px;
+}
+
+#contact ul {
+  padding: 0 2rem;
+  line-height: 2rem;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.clickable {
+  display: inline-flex;
+}
+
+.click a{
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  background-color: #4a4a4a;
+  color: white;
+  margin:0 1rem;
+}
+
+.click a:hover {
+  border: 2px solid #4a4a4a;
+  background: white;
+  color: #4a4a4a;
+  transition: all 0.1s linear;
+}
+
+/* Projects */
+
+video {
+  width: 350px;
+  height: 300px;
+}
+
+#project {
+  display: flex;
+  height: 400px;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  margin: 0 15%;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 3rem 0;
+}
+
+.main-content-sudoku {
+  background-color: #0CF8BF;
+  height: 420px;
+}
+
+.main-content-path {
+  background-color:#0BD1D9;
+  height: 420px;
+}
+
+.main-content-price {
+  background-color:#00A8F0;
+  height: 420px;
+}
+
+#project a{
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  background-color: #4a4a4a;
+  color: white;
+  margin:0 1rem;
+}
+
+#project a:hover {
+  border: 2px solid #4a4a4a;
+  background: white;
+  color: #4a4a4a;
+  transition: all 0.1s linear;
+}
